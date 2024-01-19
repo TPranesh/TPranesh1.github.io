@@ -1,0 +1,231 @@
+
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    display:inline-block;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size:cover;
+    background-image: url(photos/willpattu\ oic.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+
+
+}
+
+/*nav start*/
+nav{
+    position: relative;
+    width: 90%;
+    max-width: 1100px;
+    height: 102px;
+    background:#222 ;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+  
+}
+nav a{
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px;
+    z-index: 1;
+}
+nav span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 100px;
+    background: linear-gradient(45deg,#4f1919,#8e7c09);
+    border-radius: 8px;
+    transition: .5s;
+
+}
+nav a :hover~span{
+    width: 100%;
+}
+
+@media screen and (max-width:768px) {
+    nav{
+        flex-direction: column;
+        align-items: stretch;
+    }
+    nav a{
+        padding: 10px 0;
+        text-align: center;
+    }
+    nav span{
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        border-radius: 0;
+    }
+    nav a:hover~span{
+        height: 100px;
+    }
+    
+}
+nav a:nth-child(1):hover~span{
+    left: 00;
+    width: 170px;
+}
+nav a:nth-child(2):hover~span
+{
+    left: 185px;
+}
+nav a:nth-child(3):hover~span
+{
+    left: 390px;
+    width: 290px;
+}
+nav a:nth-child(4):hover~span
+{
+    left: 714px;
+    width: 170px;
+}
+nav a:nth-child(5):hover~span
+{
+    left: 885px;
+    width: 260x;
+}
+/*nav end*/
+
+/*body start*/
+.para1{
+    background-color:rgb(60, 120, 86);
+    color: whitesmoke;
+    padding-top: 40px;
+    padding: 55px;
+    border-style: solid;
+    border-color:rgb(238, 53, 53);
+    border-width: 10px;
+    margin-bottom: 150px;
+    margin: 12px;
+}
+
+.heading1{
+    background-color: #d1dfda;
+    display: inline-block;
+    padding: 10px;
+    margin-left: 30%;
+    color: rgb(11, 84, 55);
+    margin-top: 25px;
+}
+
+
+.body1{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(226, 208, 224);
+    align-items: center;
+}
+
+.homecontainer1{
+    display: inline-block;
+    margin-top: 560px;
+}
+
+.card1{
+    height: 400px;
+    width: 400px;
+    margin: 40px;
+    box-shadow: 7px 5px 20px black;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.img2{
+    height: 400px;
+    width: 400px;
+    border-radius: 4px;
+}
+
+.intro1{
+    height: 69px;
+    width: 360px;
+    padding: 12px;
+    box-sizing: border-box;
+    position: relative;
+    bottom: -1504px;
+    background: rgb(27 27 27 .5);
+    color: rgb(255, 251, 251);
+    transition: .5s;
+}
+
+.body1 h1{
+    margin: 10px;
+    font-size: 40px;
+
+}
+.body1 p{
+    font-size: 11px;
+    margin: 18px;
+    visibility: hidden;
+    opacity: 0;
+}
+.body1 span{
+    font-weight: bold;
+}
+.card1:hover{
+    cursor: pointer;
+}
+.card1:hover .intro1{
+    height: 250px;
+    bottom: 240px;
+    background: black;
+}
+.card1:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+.card1:hover img{
+    transform: scale(1.1) rotate(-3deg);
+}
+
+
+.map{
+    width: 50%;
+    margin: 0 auto;
+    clear: both;
+    margin-top: 15px;
+    
+  }
+
+.map h2{
+    background-color: #e3f2ed;
+    display: inline-block;
+    padding: 20px;
+    margin-left: 30%;
+    color: rgb(11, 48, 84);
+    margin-bottom: 10px;
+    
+  }
+
+/*body end*/
+  footer{
+    background-color:rgb(38, 85, 138);
+    text-align: center;
+    padding: 10px;
+    color: aliceblue;
+}
+
+
+footer ul li a{
+    text-decoration: none;
+    color: #fff;
+}

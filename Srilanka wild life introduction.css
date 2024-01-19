@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    display:inline-block;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-image: url(photos/forest.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+
+
+}
+
+/*nav start*/
+
+
+nav{
+    position: relative;
+    width: 90%;
+    max-width: 1100px;
+    height: 102px;
+    background:#222 ;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+  
+}
+nav a{
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px;
+    z-index: 1;
+}
+nav span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 100px;
+    background: linear-gradient(45deg,#4f1919,#8e7c09);
+    border-radius: 8px;
+    transition: .5s;
+
+}
+nav a :hover~span{
+    width: 100%;
+}
+
+@media screen and (max-width:768px) {
+    nav{
+        flex-direction: column;
+        align-items: stretch;
+    }
+    nav a{
+        padding: 10px 0;
+        text-align: center;
+    }
+    nav span{
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        border-radius: 0;
+    }
+    nav a:hover~span{
+        height: 100px;
+    }
+    
+}
+nav a:nth-child(1):hover~span{
+    left: 00;
+    width: 170px;
+}
+nav a:nth-child(2):hover~span
+{
+    left: 185px;
+}
+nav a:nth-child(3):hover~span
+{
+    left: 390px;
+    width: 290px;
+}
+nav a:nth-child(4):hover~span
+{
+    left: 714px;
+    width: 170px;
+}
+nav a:nth-child(5):hover~span
+{
+    left: 885px;
+    width: 260x;
+}
+/*nav end*/
+
+/*body start*/
+.img1{
+    float: left;
+    width: 450px;
+    height: 330px;
+    padding: 20px;
+}
+.img2{
+    float:right;
+    width:550px;
+    height: 330px;
+    padding: 20px;
+}
+
+.para1{
+    background-color:rgb(157, 76, 47);
+    color: whitesmoke;
+    padding-top: 40px;
+    padding: 35px;
+    border-style: solid;
+    border-color:rgb(73, 72, 72);
+    border-width: 10px;
+    margin-bottom: 150px;
+}
+
+.heading1{
+    background-color: #e2eeea;
+    display: inline-block;
+    padding: 10px;
+    margin-left: 30%;
+    color: rgb(11, 48, 84);
+    margin-top: 25px;
+}
+.img2{
+    float: right;
+    width: 400px;
+    padding: 20px;
+}
+
+
+.div2{
+    text-align: center;
+    width: 100px;
+    margin: 133px;
+    display: block;
+}
+.div2 h2{
+    background-color: #e2eeea;
+    display: inline-block;
+    padding: 10px;
+    margin-left: 30%;
+    color: rgb(11, 48, 84);
+    margin-top: 25px;
+}
+
+table {
+
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+table, th, td {
+    border: 1px solid#cf5e5e;
+}
+th, td{
+    padding: 15px;
+    text-align: left;
+}
+@media screen and (max-width: 768px) {
+    table{
+        overflow-x: auto;
+    }
+    
+}
+.div2{
+    margin-left: 50px;
+}
+.div5{
+    text-align: center;
+    width: 100px;
+    margin: 133px;
+    display: block;
+}
+.div5 h2{
+    background-color: #e2eeea;
+    display: inline-block;
+    padding: 10px;
+    margin-left: 30%;
+    color: rgb(11, 48, 84);
+    margin-top: 25px;
+}
+.div3 {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.div3 {
+    clear: both;
+}
+
+.div3, .div6{
+    width: 90%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.div5{
+    text-align: center;
+    width: 100px;
+    margin: 69px;
+    display: block;
+}
+.div6{
+    width: 50%;
+    margin: 0 auto;
+    clear: both;
+    margin-bottom: 50px;
+}
+footer{
+    background-color: rgb(99, 161, 88);
+    text-align: center;
+    padding: 10px;
+}
+body{
+    background: url(photos/themes/background\ 4.jpg);
+}
+
+table{
+    background-color: rgb(210, 238, 170);
+    width: 856;
+    height: 500px;
+}
+
+table img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+
+}
+iframe{
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    iframe{
+        height: 300px
+
+    }
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: #fff;
+}
