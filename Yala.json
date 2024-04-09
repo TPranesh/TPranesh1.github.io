@@ -1,0 +1,29 @@
+{
+    "title": "SL: The Pinnacle of Wildlife",
+    "heading": "Yala National Park",
+    "paragraph": "Yala National Park, located in the southeastern region of Sri Lanka, stands as one of the country's premier wildlife sanctuaries. Renowned for its diverse ecosystems, Yala is a haven for wildlife enthusiasts and nature lovers. The park encompasses a variety of habitats, including dense forests, grasslands, and coastal zones, providing a home to a remarkable array of flora and fauna. Yala is particularly famous for its high leopard density, making it one of the best places in the world to spot these elusive big cats. Beyond leopards, the park is home to Asian elephants, sloth bears, sambar deer, and a plethora of bird species. The scenic landscapes, encompassing rocky outcrops and picturesque water bodies, enhance the overall allure of Yala National Park, making it a must-visit destination for those seeking a memorable and immersive wildlife experience in Sri Lanka.",
+    "imageTextContainers": [
+      {
+        "imageSrc": "photos/yala3.jpg",
+        "imageAlt": "Image",
+        "overlayText": "Yala is renowned for having one of the highest leopard densities in the world. A leopard safari is a must-do activity, offering visitors the chance to spot these majestic big cats in their natural habitat. The park's expert guides and trackers enhance the experience, providing insights into the elusive behavior of leopards."
+      },
+      {
+        "imageSrc": "photos/yala4.jpg",
+        "imageAlt": "Image",
+        "overlayText": "Bird watching at Yala National Park unveils a vibrant avian spectacle with over 200 species. As you explore diverse landscapes, from dense forests to open grasslands, spot colorful endemics like the painted stork and the Indian roller. Guided by experienced naturalists, this journey promises a delightful experience, capturing the essence of Yala's dynamic and diverse birdlife."
+      },
+      {
+        "imageSrc": "photos/lepord1.jpg",
+        "imageAlt": "Image",
+        "overlayText": "The Sri Lankan leopard is the apex predator in Yala National Park and is one of the park's iconic and elusive inhabitants. Yala boasts one of the highest leopard densities globally, providing visitors with a unique opportunity to witness these magnificent big cats in their natural habitat."
+      }
+    ],
+    "map": {
+      "heading": "Located At",
+      "iframeSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.945702755638!2d79.91723077448268!3d6.897098018710165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae250aa85489b1f%3A0xd8773339b6b43dbb!2sDepartment%20of%20Wildlife%20Conservation!5e0!3m2!1sen!2slk!4v1705570450278!5m2!1sen!2slk",
+      "iframeWidth": 600,
+      "iframeHeight": 450
+    }
+  }
+  

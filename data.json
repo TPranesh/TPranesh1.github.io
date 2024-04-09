@@ -1,0 +1,95 @@
+{
+  "doctype": "html",
+  "html": {
+    "lang": "en",
+    "head": {
+      "title": "Pinacle of wildlife"
+    },
+    "body": {
+      "header": {
+        "nav": {
+          "a": [
+            { "href": "index.html", "content": "HOME PAGE" },
+            { "href": "Srilanka wild life introduction.html", "content": "INTRODUCTION PAGE" },
+            { "href": "Department of wildlife conservation.html", "content": "Department of wildlife conservation" },
+            { "href": "Srilanka lepord.html", "content": "Srilankan lepord" },
+            { "href": "Animals in srilanka.html", "content": "Animals in srilanka" }
+          ],
+          "span": ""
+        }
+      },
+      "main": {
+        "h2": [
+          { "id": "heading1", "class": "heading1", "content": "Unveiling Sri Lanka's Wildlife Wonders" },
+          { "id": "heading2_1", "class": "heading2", "content": "Avian Paradise: Soaring Through Sri Lanka's Skies" },
+          { "id": "heading2_2", "class": "heading2", "content": "Iconic Wildlife Species" },
+          { "id": "heading3", "class": "heading3", "content": "Diversity" }
+        ],
+        "img": [
+          { "id": "img0", "src": "photos/elephant home.jpg", "alt": "picture of a elephant", "class": "img0" },
+          { "id": "img1", "src": "photos/eagle.jpg", "alt": "a srilankan bird", "height": "275", "width": "400", "class": "img1" },
+          { "id": "card1_img_1", "src": "photos/elephants_river.jpg.jpg", "alt": "elephants", "class": "img2" },
+          { "id": "card1_img_2", "src": "photos/leppord_wild.jpg.jpg", "alt": "elephants", "class": "img2" },
+          { "id": "card1_img_3", "src": "photos/junglrfowl.jpg", "alt": "elephants", "class": "img2" },
+          { "id": "img4_1", "src": "photos/rainforest.jpg", "alt": "rainforest", "height": "350", "width": "500", "class": "img4" },
+          { "id": "img4_2", "src": "photos/habitat 2.jpg", "alt": "habitats", "height": "350", "width": "500", "class": "img4" }
+        ],
+        "p": [
+          { "id": "homep1", "class": "homep1", "content": "Embark on a journey to discover Sri Lanka's wildlife wonders. From lush jungles to pristine coastlines, our island paradise unfolds a tapestry of diverse ecosystems and unique species. Explore the untamed splendor of this enchanting realm, where every moment is a revelation. Welcome to the wild wonders of Sri Lanka, where nature's secrets come to life" },
+          { "id": "homep2", "class": "homep2", "content": "Embark on a journey into the heart of Sri Lanka's avian wonderland, where the skies play host to a breathtaking display of colors and melodies. In this sanctuary for bird enthusiasts, lush habitats provide refuge to an array of species, both endemic and migratory. Vibrant plumage and distinctive calls fill the air as you explore the diverse landscapes that draw flocks from around the world." }
+        ],
+        "div": [
+          {
+            "class": "body1"
+            
+          },
+          {
+            "homep3": {
+              "id": "homep3",
+              "class": "homep3",
+              "p": [
+                { "id": "homep3_p1", "content": "Explore the dense rainforests of Sinharaja, a UNESCO World Heritage Site and a biodiversity hotspot, where vibrant plant life and elusive species thrive in the midst of untouched wilderness. Wander through the dry zone forests of Wilpattu, Yala, and Minneriya, home to iconic elephants, leopards, and a myriad of bird species." },
+                { "id": "homep3_p2", "content": "The aquatic realms are no less captivating, as Sri Lanka's coastal areas and surrounding oceans host a diverse marine habitat. Coral reefs teem with colorful fish in Hikkaduwa and Trincomalee, while the southern seas become a migratory route for majestic whales." }
+              ],
+              "ul": {
+                "li": [
+                  { "content": "Explore Sri Lanka's 'Diverse Habitats'—from the misty hills of Sinharaja to the arid plains of Wilpattu." },
+                  { "content": "Immerse yourself in the lush rainforests, home to unique wildlife." },
+                  { "content": "Dive into the coastal waters, where vibrant marine life thrives." },
+                  { "content": "Witness the interconnected beauty of Sri Lanka's ecosystems, each a haven for a myriad of species." }
+                ],
+                "img5": { "id": "img4_1", "src": "photos/rainforest.jpg", "alt": "rainforest", "height": "350", "width": "500", "class": "img4" },
+                "img6": { "id": "img4_2", "src": "photos/habitat_2.jpg", "alt": "habitats", "height": "300", "width": "500", "class": "img4" }
+              }
+            }
+          }
+        ]
+      },
+      
+      "footer": {
+        "hr": "",
+        "p": [
+          { "content": "Author:Pranesh" },
+          { "content": "&copy;Copyright reserved" }
+        ],
+        "div": {
+          "id": "footer_div",
+          "h4": "LINKS",
+          "ul": {
+            "id": "footer_ul",
+            "li": [
+              { "a": { "href": "index.html", "content": "Home" } },
+              { "a": { "href": "Srilanka wild life introduction.html", "content": "INTRODUCTION" } },
+              { "a": { "href": "Department of wildlife conservation.html", "content": "D.O.W.C" } },
+              { "a": { "href": "Srilanka lepord.html", "content": "LEOPARD" } },
+              { "a": { "href": "Animals in srilanka.html", "content": "Animals" } },
+              { "a": { "href": "Yala.html", "content": "YALA" } },
+              { "a": { "href": "Willpatu.html", "content": "WILLPATTU" } }
+            ]
+          }
+        }
+      }
+    }
+  }
+
+}

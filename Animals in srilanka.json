@@ -1,0 +1,33 @@
+{
+    "pageHeading": "Indigenous Animals",
+    "navLinks": {
+      "home": "HOME PAGE",
+      "introduction": "INTRODUCTION PAGE",
+      "conservation": "Department of wildlife conservation",
+      "leopard": "Srilankan lepord",
+      "animals": "Animals in srilanka"
+    },
+    "Indigenous Animals": {
+      "content": "Sri Lanka's indigenous wildlife extends beyond the charismatic megafauna to include a fascinating array of creatures. The hump-nosed viper, a venomous snake endemic to Sri Lanka, showcases intricate patterns in its scales. The endemic red-faced barbet, with its vibrant plumage, is a striking bird found in the island's forests. Sri Lanka is also home to the unique and elusive slender loris, a nocturnal primate characterized by its large, round eyes. In the freshwater realms, the Sri Lankan mahseer, a native fish species, navigates the island's rivers. The diversity of indigenous animals in Sri Lanka, from the smallest amphibians to the grandest mammals, underscores the ecological richness that deserves preservation and appreciation."
+    },
+    "Red-Faced Barbet": {
+      "heading": "Red-Faced Barbet",
+      "image": "photos/red bird.jpg",
+      "content": "The red-faced barbet (Psilopogon pyrolophus) is a captivating bird species endemic to the lush forests of Sri Lanka. Characterized by its vibrant plumage, this barbet features a striking combination of red, yellow, and green feathers. Its distinctive red face, bordered by a black stripe, gives the bird its name. The red-faced barbet is typically found in the canopy of montane forests, where it forages for fruits, insects, and small vertebrates. Its resonant calls echo through the dense foliage, adding a melodious soundtrack to the island's rich biodiversity. However, like many species, the red-faced barbet faces threats from habitat loss due to deforestation, emphasizing the importance of conservation efforts to ensure the continued existence of this visually stunning and endemic bird in Sri Lanka."
+    },
+    "Slender Loris": {
+      "heading": "Slender Loris",
+      "image": "photos/slender loris.jpg",
+      "content": "The slender loris (Loris tardigradus) is a small, nocturnal primate found in the forests of South India and Sri Lanka. With its large, round eyes adapted for night vision, the slender loris is an expert hunter of insects and small vertebrates in the trees. It has a remarkable ability to move slowly and deliberately, making it nearly undetectable to its prey. The slender loris's fur is dense and soft, ranging in color from grey to reddish-brown, providing excellent camouflage among the leaves. However, this fascinating primate is endangered due to habitat loss and poaching. Conservation efforts are crucial to protect the slender loris and its unique adaptations."
+    },
+    "Toque Macaque": {
+      "heading": "Toque Macaque",
+      "image": "photos/toque macaque1.jpg",
+      "content": "The toque macaque (Macaca sinica) is a medium-sized monkey endemic to Sri Lanka, known for its distinctive reddish-brown fur and the tuft of hair on its head resembling a hat, or 'toque.' These social primates live in groups, often found in the country's forests and urban areas. Toque macaques are omnivorous, feeding on a variety of foods including fruits, seeds, insects, and small animals. They have adapted well to human presence, sometimes venturing into agricultural areas in search of food. While their adaptable nature has allowed them to thrive in various habitats, habitat loss and human-wildlife conflict pose significant threats to their populations. Conservation efforts are essential to ensure the continued survival of the toque macaque in Sri Lanka."
+    },
+    "Links": {
+      "Yala National Park": "Yala.html",
+      "Wilpattu National Park": "Willpatu.html"
+    }
+  }
+  

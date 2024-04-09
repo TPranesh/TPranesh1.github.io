@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -9,17 +10,14 @@ header{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-size: cover;
+    background-size:cover;
     background-image: url(photos/forest.jpg);
     background-repeat: no-repeat;
     width: 100%;
 
 
 }
-
 /*nav start*/
-
-
 nav{
     position: relative;
     width: 90%;
@@ -85,51 +83,57 @@ nav a:nth-child(1):hover~span{
 }
 nav a:nth-child(2):hover~span
 {
-    left: 185px;
+    left: 35px;
 }
 nav a:nth-child(3):hover~span
 {
-    left: 390px;
-    width: 290px;
+    left: 210px;
+    width: 200px;
 }
 nav a:nth-child(4):hover~span
 {
-    left: 714px;
-    width: 170px;
+    left: 404px;
+    width: 300px;
 }
 nav a:nth-child(5):hover~span
 {
-    left: 885px;
-    width: 260x;
+    left: 705px;
+    width: 150x;
 }
-/*nav end*/
 
-/*body start*/
-.img1{
+nav a:nth-child(6):hover~span
+{
+    left: 855px;
+    width: 150x;
+}
+/* Body Styles */
+
+.img1 {
     float: left;
     width: 450px;
     height: 330px;
     padding: 20px;
 }
-.img2{
-    float:right;
-    width:550px;
+
+.img2 {
+    float: right;
+    width: 550px;
     height: 330px;
     padding: 20px;
 }
 
-.para1{
-    background-color:rgb(157, 76, 47);
+.para1 {
+    background-color: rgb(157, 76, 47);
     color: whitesmoke;
     padding-top: 40px;
     padding: 35px;
     border-style: solid;
-    border-color:rgb(73, 72, 72);
+    border-color: rgb(73, 72, 72);
     border-width: 10px;
     margin-bottom: 150px;
 }
 
-.heading1{
+.heading1 {
     background-color: #e2eeea;
     display: inline-block;
     padding: 10px;
@@ -137,20 +141,15 @@ nav a:nth-child(5):hover~span
     color: rgb(11, 48, 84);
     margin-top: 25px;
 }
-.img2{
-    float: right;
-    width: 400px;
-    padding: 20px;
-}
 
-
-.div2{
+.div2 {
     text-align: center;
     width: 100px;
     margin: 133px;
     display: block;
 }
-.div2 h2{
+
+.div2 h2 {
     background-color: #e2eeea;
     display: inline-block;
     padding: 10px;
@@ -159,35 +158,42 @@ nav a:nth-child(5):hover~span
     margin-top: 25px;
 }
 
-table {
+.tablepic {
+    width: 500px;
+    height: 80%;
+    
+}
 
+
+table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
 }
+
 table, th, td {
-    border: 1px solid#cf5e5e;
+    border: 1px solid #cf5e5e;
 }
-th, td{
+
+th, td {
     padding: 15px;
     text-align: left;
 }
+
 @media screen and (max-width: 768px) {
-    table{
+    table {
         overflow-x: auto;
     }
-    
 }
-.div2{
-    margin-left: 50px;
-}
-.div5{
+
+.div5 {
     text-align: center;
     width: 100px;
     margin: 133px;
     display: block;
 }
-.div5 h2{
+
+.div5 h2 {
     background-color: #e2eeea;
     display: inline-block;
     padding: 10px;
@@ -195,68 +201,94 @@ th, td{
     color: rgb(11, 48, 84);
     margin-top: 25px;
 }
+
 .div3 {
     width: 50%;
     margin: 0 auto;
     margin-bottom: 20px;
 }
-.div3 {
-    clear: both;
-}
 
-.div3, .div6{
+.div3, .div6 {
     width: 90%;
     margin: auto;
     box-sizing: border-box;
 }
 
-.div5{
+.div5 {
     text-align: center;
     width: 100px;
     margin: 69px;
     display: block;
 }
-.div6{
+
+.div6 {
     width: 50%;
     margin: 0 auto;
     clear: both;
     margin-bottom: 50px;
 }
-footer{
+
+footer {
     background-color: rgb(99, 161, 88);
     text-align: center;
     padding: 10px;
 }
-body{
+.newsletter {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .newsletter h3 {
+    margin-bottom: 10px;
+  }
+  
+  #newsletterForm {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #email {
+    padding: 10px;
+    width: 250px;
+    margin-right: 10px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+body {
     background: url(photos/themes/background\ 4.jpg);
 }
 
-table{
+table {
     background-color: rgb(210, 238, 170);
     width: 856;
-    height: 500px;
+    height: 400px;
 }
 
-table img{
-    width: 100%;
-    height: auto;
-    max-width: 100%;
 
-}
-iframe{
+iframe {
     width: 100%;
     height: 450px;
     border: 0;
 }
 
 @media only screen and (max-width: 768px) {
-    iframe{
-        height: 300px
-
+    iframe {
+        height: 300px;
     }
 }
 
-footer ul li a{
+footer ul li a {
     text-decoration: none;
     color: #fff;
 }

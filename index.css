@@ -103,6 +103,25 @@ nav a:nth-child(5):hover~span
 }
 /*nav end*/
 
+/* Add this style for the Login button */
+.login-button {
+    position: absolute;
+    top: 60px;
+    right: 50px;
+    background-color: #e77128;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 26px;
+}
+
+.login-button:hover {
+    background-color: #05ed10;
+}
+
+
 /*body start*/
 
 .list{
@@ -136,6 +155,9 @@ nav a:nth-child(5):hover~span
     float: right;
     width: 450px;
     height: 330px;
+    padding: 20px;
+}
+.img4{
     padding: 20px;
 }
 
@@ -242,16 +264,55 @@ main{
     background-image: url(photos/pexels-esra-7832603.jpg);
     color: beige;
 }
+
+
+
 /*footer  start*/
 footer{
     background-color:rgb(138, 38, 72);
     text-align: center;
     padding: 10px;
     color: aliceblue;
+    
+    
 }
 
 footer ul li a{
     text-decoration: none;
     color: #fff;
+    
+
 }
+
+.newsletter {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .newsletter h3 {
+    margin-bottom: 10px;
+  }
+  
+  #newsletterForm {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #email {
+    padding: 10px;
+    width: 250px;
+    margin-right: 10px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
 /*footer end*/

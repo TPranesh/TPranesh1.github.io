@@ -1,0 +1,75 @@
+{
+  "title": "SL: The Pinnacle of Wildlife",
+  "navLinks": [
+    { "label": "HOME PAGE", "link": "index.html", "spanColor": "#4f1919" },
+    { "label": "INTRODUCTION PAGE", "link": "Srilanka wild life introduction.html", "spanColor": "#8e7c09" },
+    { "label": "Department of wildlife conservation", "link": "Department of wildlife conservation.html", "spanColor": "#3a6351" },
+    { "label": "Srilankan lepord", "link": "Srilanka lepord.html", "spanColor": "#de6e51" },
+    { "label": "Animals in srilanka", "link": "Animals in srilanka.html", "spanColor": "#0d395c" }
+  ],
+  "heading1": "Gal Oye National Park",
+  "galOye": {
+    "imgSrc": "photos/gal oye siloute.jpg",
+    "description": "Gal Oya National Park, nestled in eastern Sri Lanka, is a haven of pristine wilderness and aquatic allure. The expansive Senanayake Samudraya reservoir sets the stage for boat safaris, revealing the mesmerizing world of Asian elephants, elusive sloth bears, and formidable crocodile species. The park's avian diversity adds to the allure, with waterbirds and raptors gracing the skies. Beyond its wildlife charm, Gal Oya seamlessly transitions from grassy plains to dense forests, offering diverse habitats for countless species. Boat safaris provide an intimate connection with the park's biodiversity, presenting an alternative perspective on nature's grandeur. With its unique blend of terrestrial and aquatic wonders, Gal Oya National Park invites exploration and promises a glimpse into the captivating beauty of Sri Lanka's less-explored gem.",
+    "mapSrc": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7916.216867052799!2d81.4685002!3d7.2284715!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae4e2a00da92731%3A0x2792347a67187b94!2sGal%20Oya%20Valley%20National%20Park!5e0!3m2!1sen!2slk!4v1705243529663!5m2!1sen!2slk"
+  },
+  "galOyeTable": [
+    {
+      "name": "Asian Elephant",
+      "photo": "photos/elephant table.jpg",
+      "fact": "An intriguing fact about Asian elephants in Gal Oya National Park is their unique behavior of swimming between islands within the Senanayake Samudraya reservoir.",
+      "conservationStatus": "Endangered (EN)"
+    },
+    {
+      "name": "Water Buffalo",
+      "photo": "photos/water buffalo.jpg",
+      "fact": "To regulate body temperature and protect against parasites, water buffaloes frequently engage in mud baths. In Gal Oya, observing these animals wallowing in the mud along the reservoir shores is a common and fascinating sight.",
+      "conservationStatus": "Domesticated (no wild populations)"
+    },
+    {
+      "name": "Leopard Panthera pardus",
+      "photo": "photos/leppord_tree.jpg.jpg",
+      "fact": "In Gal Oya National Park, leopards showcase exceptional adaptability, navigating seamlessly through diverse landscapes, including grassy plains, dense forests, and around the Senanayake Samudraya reservoir. This versatility sets them apart, making each leopard encounter in Gal Oya a testament to their remarkable ability to thrive in various environments.",
+      "conservationStatus": "Near Threatened (NT)"
+    }
+  ],
+  "heading2": "Knuckles Mountain Range",
+  "knuckles": {
+    "imgSrc": "photos/knuckles.jpg",
+    "description": "The Knuckles Mountain Range, a UNESCO World Heritage Site in central Sri Lanka, is a biodiversity hotspot boasting a rich tapestry of wildlife. This mountainous haven is home to diverse species, including the endemic purple-faced langur, Sambar deer, and wild boars. Trekking through the mist-covered peaks reveals a symphony of birdlife, with the Sri Lanka white-eye and spurfowl among the avian residents. The range's lush forests harbor a variety of reptiles and amphibians, contributing to the region's ecological significance. The Knuckles Mountain Range, with its scenic landscapes and abundant wildlife, offers a captivating adventure for nature enthusiasts seeking to explore the unique ecosystems of Sri Lanka.",
+    "mapSrc": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7916.216867052799!2d81.4685002!3d7.2284715!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae4e2a00da92731%3A0x2792347a67187b94!2sGal%20Oya%20Valley%20National%20Park!5e0!3m2!1sen!2slk!4v1705243529663!5m2!1sen!2slk"
+  },
+  "knucklesTable": [
+    {
+      "name": "Samba deer",
+      "photo": "photos/samba deer.jpg",
+      "fact": "In the Knuckles Mountain Range, Sambar Deer display remarkable adaptability, thriving across various elevations from lush forests to higher grassy plains. This versatility underscores their ability to navigate the diverse landscapes of this UNESCO World Heritage Site.",
+      "conservationStatus": "Least Concern (LC)"
+    },
+    {
+      "name": "Wild Boar",
+      "photo": "photos/wild boar.jpg",
+      "fact": "In the Knuckles Mountain Range, Wild Boars act as ecosystem engineers, shaping the forest by their foraging behavior. Their presence contributes to the dynamic nature of the ecosystem, influencing plant diversity and growth.",
+      "conservationStatus": "Least Concern (LC)"
+    },
+    {
+      "name": "The Purple-faced Langur",
+      "photo": "photos/purple face.jpg",
+      "fact": "The Purple-faced Langur in the Knuckles Mountain Range undergoes a fascinating color change from orange in infancy to deep purple as it matures. This adaptation serves as effective camouflage amidst the dense montane forests, aiding in their survival.",
+      "conservationStatus": "Near Threatened (NT)"
+    }
+  ],
+  "footer": {
+    "author": "Pranesh",
+    "copyright": "© Copyright reserved",
+    "links": [
+      { "label": "home", "link": "index.html" },
+      { "label": "INTRODUCTION", "link": "Srilanka wild life introduction.html" },
+      { "label": "D.O.W.C", "link": "Department of wildlife conservation.html" },
+      { "label": "LEOPARD", "link": "Srilanka lepord.html" },
+      { "label": "Animals", "link": "Animals in srilanka.html" },
+      { "label": "YALA", "link": "Yala.html" },
+      { "label": "WILLPATTU", "link": "Willpatu.html" }
+    ]
+  }
+}

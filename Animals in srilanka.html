@@ -1,85 +1,102 @@
-<!DOCTYPE htmml>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>SL: The Pinnacle of Wildlife</title>
-        <link rel="stylesheet" href="Animals in srilanka.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            
-            <nav>
-                
-                  <a href="index.html">HOME PAGE</a>
-                  <a href="Srilanka wild life introduction.html">INTRODUCTION PAGE</a>
-                  <a href="Department of wildlife conservation.html">Department of wildlife conservation</a>
-                  <a href="Srilanka lepord.html">Srilankan lepord</a>
-                  <a href="Animals in srilanka.html">Animals in srilanka</a>
-                  <span></span>
-                
-            </nav>
-            
-        </header>
+<head>
+    <title>SL: The Pinnacle of Wildlife</title>
+    <link rel="stylesheet" href="Animals in srilanka.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+<body x-data="{
+    pageData: {},
+    loadPageData: function() {
+        fetch('Animals in srilanka.json')
+        .then(response => response.json())
+        .then(data => {
+            this.pageData = data;
+            localStorage.setItem('animalData', JSON.stringify(data)); // Save data to local storage
+        })
+        .catch(error => {
+            console.error('Error fetching data:', error);
+        });
+    },
+    subscribe: function() {
+        let email = document.getElementById('email').value;
+        let subscribedEmails = JSON.parse(localStorage.getItem('subscribedEmails')) || [];
+        subscribedEmails.push(email);
+        localStorage.setItem('subscribedEmails', JSON.stringify(subscribedEmails));
+        document.getElementById('email').value = ''; // Clear input after submission
+        alert('Subscribed successfully!');
+    }
+}" x-init="loadPageData()">
 
-        <h1 class="heading1"><center>Indigenous Animals</center></h1>
-        <br><br>
-        <div class="div1"> 
-            
-            <p class="para1">
-                Sri Lanka's indigenous wildlife extends beyond the charismatic megafauna to include a fascinating array of creatures. The hump-nosed viper, a venomous snake endemic to Sri Lanka, showcases intricate patterns in its scales. The endemic red-faced barbet, with its vibrant plumage, is a striking bird found in the island's forests. Sri Lanka is also home to the unique and elusive slender loris, a nocturnal primate characterized by its large, round eyes. In the freshwater realms, the Sri Lankan mahseer, a native fish species, navigates the island's rivers. The diversity of indigenous animals in Sri Lanka, from the smallest amphibians to the grandest mammals, underscores the ecological richness that deserves preservation and appreciation.
-            </p>
-        </div>
+<header>
+    <nav>
+        <a href="index.html" x-text="pageData['navLinks'] ? pageData['navLinks']['home'] : ''"></a>
+        <a href="Srilanka wild life introduction.html" x-text="pageData['navLinks'] ? pageData['navLinks']['introduction'] : ''"></a>
+        <a href="Department of wildlife conservation.html" x-text="pageData['navLinks'] ? pageData['navLinks']['conservation'] : ''"></a>
+        <a href="Srilanka lepord.html" x-text="pageData['navLinks'] ? pageData['navLinks']['leopard'] : ''"></a>
+        <a href="Animals in srilanka.html" x-text="pageData['navLinks'] ? pageData['navLinks']['animals'] : ''"></a>
+        <span></span>
+    </nav>
+</header>
 
-        <h2 class="heading1"><center>Red-Faced Barbet</center></h2><br>
-            <img src="photos/red bird.jpg" alt="bird" class="img0">
-            <p class="homep1">The red-faced barbet (Psilopogon pyrolophus) is a captivating bird species endemic to the lush forests of Sri Lanka. Characterized by its vibrant plumage, this barbet features a striking combination of red, yellow, and green feathers. Its distinctive red face, bordered by a black stripe, gives the bird its name. The red-faced barbet is typically found in the canopy of montane forests, where it forages for fruits, insects, and small vertebrates. Its resonant calls echo through the dense foliage, adding a melodious soundtrack to the island's rich biodiversity. However, like many species, the red-faced barbet faces threats from habitat loss due to deforestation, emphasizing the importance of conservation efforts to ensure the continued existence of this visually stunning and endemic bird in Sri Lanka.
-            </p>
+<h1 class="heading1" x-text="pageData['pageHeading'] ? pageData['pageHeading'] : ''"></h1>
+<br><br>
+<div class="div1"> 
+    <p class="para1" x-text="pageData['Indigenous Animals'] ? pageData['Indigenous Animals'].content : ''"></p>
+</div>
 
-            
-        <h2 class="heading1"><center>Slender Loris</center></h2><br>
-        <img src="photos/slender loris.jpg" alt="slender loris" class="img1">
-        <p class="homep1">The red-faced barbet (Psilopogon pyrolophus) is a captivating bird species endemic to the lush forests of Sri Lanka. Characterized by its vibrant plumage, this barbet features a striking combination of red, yellow, and green feathers. Its distinctive red face, bordered by a black stripe, gives the bird its name. The red-faced barbet is typically found in the canopy of montane forests, where it forages for fruits, insects, and small vertebrates. Its resonant calls echo through the dense foliage, adding a melodious soundtrack to the island's rich biodiversity. However, like many species, the red-faced barbet faces threats from habitat loss due to deforestation, emphasizing the importance of conservation efforts to ensure the continued existence of this visually stunning and endemic bird in Sri Lanka.
-        </p>
+<h2 class="heading1" x-text="pageData['Red-Faced Barbet'] ? pageData['Red-Faced Barbet'].heading : ''"></h2><br>
+<div x-show="pageData['Red-Faced Barbet']">
+    <img x-bind:src="pageData['Red-Faced Barbet'] && pageData['Red-Faced Barbet'].image ? pageData['Red-Faced Barbet'].image : ''" alt="bird" class="img0">
+    <p class="homep1" x-text="pageData['Red-Faced Barbet'] ? pageData['Red-Faced Barbet'].content : ''"></p>
+</div>
 
-        
-        <h2 class="heading1"><center>Toque Macque</center></h2><br>
-            <img src="photos/toque macaque1.jpg" alt="monkey" class="img0">
-            <p class="homep1">The red-faced barbet (Psilopogon pyrolophus) is a captivating bird species endemic to the lush forests of Sri Lanka. Characterized by its vibrant plumage, this barbet features a striking combination of red, yellow, and green feathers. Its distinctive red face, bordered by a black stripe, gives the bird its name. The red-faced barbet is typically found in the canopy of montane forests, where it forages for fruits, insects, and small vertebrates. Its resonant calls echo through the dense foliage, adding a melodious soundtrack to the island's rich biodiversity. However, like many species, the red-faced barbet faces threats from habitat loss due to deforestation, emphasizing the importance of conservation efforts to ensure the continued existence of this visually stunning and endemic bird in Sri Lanka.
-            </p>
+<h2 class="heading1" x-text="pageData['Slender Loris'] ? pageData['Slender Loris'].heading : ''"></h2><br>
+<div x-show="pageData['Slender Loris']">
+    <img x-bind:src="pageData['Slender Loris'] && pageData['Slender Loris'].image ? pageData['Slender Loris'].image : ''" alt="slender loris" class="img1">
+    <p class="homep1" x-text="pageData['Slender Loris'] ? pageData['Slender Loris'].content : ''"></p>
+</div>
 
-            <a href="Yala.html" class="link">Yala National Park</a>
-            <a href="Willpatu.html" class="link2">Wllpatu National Park</a>
-    </body>
-    <footer id="footer">
-        <hr>
-        Author:Pranesh<br>
-        &copy;Copyright reserved<br>
-        <div>
-        <h4>LINKS</h4> 
+<h2 class="heading1" x-text="pageData['Toque Macaque'] ? pageData['Toque Macaque'].heading : ''"></h2><br>
+<div x-show="pageData['Toque Macaque']">
+    <img x-bind:src="pageData['Toque Macaque'] && pageData['Toque Macaque'].image ? pageData['Toque Macaque'].image : ''" alt="monkey" class="img0">
+    <p class="homep1" x-text="pageData['Toque Macaque'] ? pageData['Toque Macaque'].content : ''"></p>
+</div>
+
+<a x-bind:href="pageData['Links'] ? pageData['Links']['Yala National Park'] : ''" class="link">Yala National Park</a>
+<a x-bind:href="pageData['Links'] ? pageData['Links']['Wilpattu National Park'] : ''" class="link2">Wilpattu National Park</a>
+
+<footer id="footer">
+    <hr>
+    Author: Pranesh<br>
+    &copy; Copyright reserved<br>
+    <div>
+      <!-- Newsletter Subscription Form -->
+      <div class="newsletter">
+        <h3>Subscribe to Our Newsletter</h3>
+        <form x-on:submit.prevent="subscribe" id="newsletterForm">
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+        <h4>LINKS</h4>
         <ul>
-            <li>
-              <a href="index.html">home</a>
-            </li>
-            <li>
-              <a href="Srilanka wild life introduction.html">INTRODUCTION</a>
-            </li>
-            <li>
-              <a href="Department of wildlife conservation.html">D.O.W.C</a>
-            </li>
-            <li>
-              <a href="Srilanka lepord.html">LEOPARD</a>
-            </li>
-            <li>
-              <a href="Animals in srilanka.html">Animals</a>
-            </li>
-            <li>
-              <a href="Yala.html">YALA</a>
-            </li>
-            <li>
-              <a href="Willpatu.html">WILLPATTU</a>
-            </li>
+            <li><a href="index.html" x-text="pageData['navLinks'] ? pageData['navLinks']['home'] : ''"></a></li>
+            <li><a href="Srilanka wild life introduction.html" x-text="pageData['navLinks'] ? pageData['navLinks']['introduction'] : ''"></a></li>
+            <li><a href="Department of wildlife conservation.html" x-text="pageData['navLinks'] ? pageData['navLinks']['conservation'] : ''"></a></li>
+            <li><a href="Srilanka lepord.html" x-text="pageData['navLinks'] ? pageData['navLinks']['leopard'] : ''"></a></li>
+            <li><a href="Animals in srilanka.html" x-text="pageData['navLinks'] ? pageData['navLinks']['animals'] : ''"></a></li>
+            <li><a href="Yala.html" x-text="pageData['Links'] ? pageData['Links']['Yala National Park'] : ''"></a></li>
+            <li><a href="Willpatu.html" x-text="pageData['Links'] ? pageData['Links']['Wilpattu National Park'] : ''"></a></li>
         </ul>
-        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+
+
+</body>
 </html>

@@ -1,0 +1,54 @@
+{
+  "navLinks": [
+    { "label": "HOME PAGE", "link": "index.html" },
+    { "label": "INTRODUCTION PAGE", "link": "Srilanka wild life introduction.html" },
+    { "label": "Department of wildlife conservation", "link": "Department of wildlife conservation.html" },
+    { "label": "Srilankan lepord", "link": "Srilanka lepord.html" },
+    { "label": "Animals in srilanka", "link": "Animals in srilanka.html" }
+  ],
+  "content": {
+    "department": {
+      "heading": "The Department of Wildlife Conservation in Sri Lanka",
+      "imgSrc": "photos/elephant_dark.jpg.jpg",
+      "description": [
+        "The Department of Wildlife Conservation in Sri Lanka is a government agency responsible for the protection, conservation, and sustainable management of the country's rich biodiversity.",
+        "The department manages a network of national parks, wildlife sanctuaries, and nature reserves across the country, aiming to create and maintain viable habitats for a variety of species.",
+        "Through strategic planning and monitoring, they work to balance the ecological needs of wildlife with the interests of local communities and the broader conservation efforts."
+      ]
+    },
+    "map": {
+      "title": "We Are Located At",
+      "mapSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.945702755638!2d79.91723077448268!3d6.897098018710165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae250aa85489b1f%3A0xd8773339b6b43dbb!2sDepartment%20of%20Wildlife%20Conservation!5e0!3m2!1sen!2slk!4v1705570450278!5m2!1sen!2slk"
+    },
+    "photoGallery": {
+      "heading": "The Gems",
+      "images": [
+        { "src": "photos/gallery/bird.jpg", "alt": "bird" },
+        { "src": "photos/gallery/elephant.jpg", "alt": "elephant" },
+        { "src": "photos/gallery/peacock1.jpg", "alt": "peacock" },
+        { "src": "photos/gallery/deer.jpg", "alt": "deer" },
+        { "src": "photos/gallery/turtle.jpg", "alt": "turtle" },
+        { "src": "photos/gallery/flamingo.jpg", "alt": "bird" },
+        { "src": "photos/gallery/suriel.jpg", "alt": "squirrel" },
+        { "src": "photos/gallery/leopard1.jpg", "alt": "leopard" },
+        { "src": "photos/gallery/mokey family.jpg", "alt": "monkey family" },
+        { "src": "photos/gallery/eagle.jpg", "alt": "eagle" },
+        { "src": "photos/gallery/jellyfish.jpg", "alt": "jellyfish" },
+        { "src": "photos/gallery/hippo.jpg", "alt": "hippo" }
+      ]
+    }
+  },
+  "footer": {
+    "author": "Pranesh",
+    "copyright": "© Copyright reserved",
+    "links": [
+      { "label": "home", "link": "index.html" },
+      { "label": "INTRODUCTION", "link": "Srilanka wild life introduction.html" },
+      { "label": "D.O.W.C", "link": "Department of wildlife conservation.html" },
+      { "label": "LEOPARD", "link": "Srilanka lepord.html" },
+      { "label": "Animals", "link": "Animals in srilanka.html" },
+      { "label": "YALA", "link": "Yala.html" },
+      { "label": "WILLPATTU", "link": "Willpatu.html" }
+    ]
+  }
+}

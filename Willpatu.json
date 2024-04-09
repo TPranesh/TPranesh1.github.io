@@ -1,0 +1,67 @@
+{
+    "body": {
+      "h1": {
+        "content": "Willpattu National Park"
+      },
+      "div1": {
+        "p": {
+          "content": "Nestled in the northwest of Sri Lanka, Wilpattu National Park stands as the largest and oldest national park in the country, spanning over 1,300 square kilometers. Revered for its unique landscape, Wilpattu is characterized by its serene lakes, dense scrub jungles, and expansive grasslands. This park is a sanctuary for a diverse range of wildlife, including the elusive Sri Lankan leopard, sloth bears, spotted deer, and a myriad of bird species. Wilpattu's distinctiveness lies in its natural, unspoiled beauty and the prevalence of \"villus,\" or natural lakes, which add to the scenic charm. The park's relatively undisturbed ecosystems make it an excellent destination for wildlife enthusiasts seeking an authentic and tranquil safari experience in the heart of Sri Lanka's biodiversity hotspot."
+        }
+      },
+      "div2": {
+        "div": [
+          {
+            "src": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.945702755638!2d79.91723077448268!3d6.897098018710165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae250aa85489b1f%3A0xd8773339b6b43dbb!2sDepartment%20of%20Wildlife%20Conservation!5e0!3m2!1sen!2slk!4v1705570450278!5m2!1sen!2slk",
+            "h2": "Located At",
+            "iframe": {
+              "src": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.945702755638!2d79.91723077448268!3d6.897098018710165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae250aa85489b1f%3A0xd8773339b6b43dbb!2sDepartment%20of%20Wildlife%20Conservation!5e0!3m2!1sen!2slk!4v1705570450278!5m2!1sen!2slk",
+              "width": "600",
+              "height": "450",
+              "style": "border:0;",
+              "allowfullscreen": "",
+              "loading": "lazy",
+              "referrerpolicy": "no-referrer-when-downgrade"
+            }
+          }
+        ]
+      },
+      "footer": {
+        "author": "Pranesh",
+        "copyright": "&copy; Copyright reserved",
+        "links": {
+          "title": "LINKS",
+          "list": [
+            {
+              "href": "index.html",
+              "content": "home"
+            },
+            {
+              "href": "Srilanka wild life introduction.html",
+              "content": "INTRODUCTION"
+            },
+            {
+              "href": "Department of wildlife conservation.html",
+              "content": "D.O.W.C"
+            },
+            {
+              "href": "Srilanka lepord.html",
+              "content": "LEOPARD"
+            },
+            {
+              "href": "Animals in srilanka.html",
+              "content": "Animals"
+            },
+            {
+              "href": "Yala.html",
+              "content": "YALA"
+            },
+            {
+              "href": "Willpatu.html",
+              "content": "WILLPATTU"
+            }
+          ]
+        }
+      }
+    }
+  }
+  

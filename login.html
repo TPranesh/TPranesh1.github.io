@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pinacle of wildlife</title>
+    <link rel="icon" href="photos/logo1.png">
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body x-data="loginForm()">
+    <section class="header">
+        <div class="login_box">
+            <div class="from logging">
+                <h1>Login</h1>
+                <form x-on:submit.prevent="submitForm">
+                    <div class="input">
+                        <input type="text" id="username" x-model="username" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input">
+                        <input type="password" id="password" x-model="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forget">
+                        <label><input type="checkbox">Remember me</label>
+                        <a href="#">Forgot Password</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@2.x.x/dist/alpine.min.js" defer></script>
+    <script>
+        function loginForm() {
+            return {
+                username: '',
+                password: '',
+                submitForm() {
+                    fetch('user data.json')
+                        .then(response => response.json())
+                        .then(data => {
+                            // Check if admin
+                            if (this.username === 'admin' && this.password === 'admin') {
+                                window.location.href = 'admin dashboard.html';
+                                return;
+                            }
+
+                            // Check user in JSON data
+                            const user = data.Users.find(u => u.username === this.username && u.Password === this.password);
+                            if (user) {
+                                window.location.href = 'user dashboard.html';
+                            } else {
+                                alert('Invalid username or password');
+                            }
+                        })
+                        .catch(error => {
+                            console.error('Error:', error);
+                        });
+                }
+            };
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin dashboard.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+<body x-data="adminDashboard()" x-init="fetchSubscribedEmails">
+    <div class="container">
+        <h1>Newsletter Subscriptions</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Email Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                <template x-for="email in subscribedEmails" :key="email">
+                    <tr>
+                        <td> 
+                            
+                        </td>
+                        <td x-text="email"></td>
+                    </tr>
+                </template>
+            </tbody>
+        </table>
+    </div>
+    
+    <script>
+        function adminDashboard() {
+            return {
+                subscribedEmails: [],
+
+                // Function to fetch subscribed emails from local storage
+                fetchSubscribedEmails() {
+                    this.subscribedEmails = JSON.parse(localStorage.getItem('subscribedEmails')) || [];
+                },
+
+                // Function to open the popup (redirects to index page)
+                openPopup() {
+                    window.location.href = 'index.html'; // Change 'index.html' to the actual page URL
+                }
+            };
+        }
+    </script>
+    <button class="edit-button" onclick="window.location.href = 'index.html';">Home</button>
+      <!-- Popup HTML -->
+      <button class="edit-button" onclick="openPopup()">Edit</button>
+      <div class="popup-container" id="popupContainer" x-data="{ editableContent: '' }">
+         <div class="popup-content">
+             <div class="popup-header">
+                 <h3>Edit Content</h3>
+                 <button class="close-btn" onclick="closePopup()">&times;</button>
+             </div>
+             <div class="popup-body">
+                 <div class="container">
+                     <h2>Select Page:</h2>
+                     <select id="dropdown" class="selection" @change="loadContent($event.target.value)">
+                         <option value="index.html">Home</option>
+                         <option value="Srilanka wild life introduction.html">Introduction</option>
+                         <option value="Department of wildlife conservation.html">Department</option>
+                         <option value="Srilanka lepord">Srilanka lepord.html</option>
+                         <option value="Animals in srilanka.html">Animals in srilanka.html</option>
+                         <option value="Yala.html">Yala</option>
+                         <option value="Wilpattu.html">Wilapattu</option>
+                     </select><br>
+                     <button id="select">SELECT PAGE</button>
+                     <button id="save">SAVE CHANGES</button>
+                     <br><br><br>
+                     <textarea id="editor-text" class="textarea" rows="4" placeholder="Enter text here..." x-model="editableContent"></textarea>
+                 </div>
+             </div>
+         </div>
+     </div>
+     
+     <!-- Include Popup JS -->
+     <script src="popup.js" defer></script>
+
+  
+   
+   <!-- Include Popup JS -->
+
+</body>
+</html>

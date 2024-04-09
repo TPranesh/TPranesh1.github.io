@@ -1,0 +1,37 @@
+{
+    "div0": {
+      "locations": [
+        {
+          "name": "Yala National Park",
+          "location": "Southern Province",
+          "habitat": "Dry zone forests, grasslands, and lagoons",
+          "leopard_population": "Approximately 40-50 individuals"
+        },
+        {
+          "name": "Wilpattu National Park",
+          "location": "North Western Province",
+          "habitat": "Thick scrub jungle, lakes, and rocky outcrops",
+          "leopard_population": "Approximately 30-40 individuals"
+        },
+        {
+          "name": "Horton Plains National Park",
+          "location": "Central Province",
+          "habitat": "Montane grasslands and cloud forests",
+          "leopard_population": "Approximately 10-15 individuals"
+        }
+      ]
+    },
+    "threat1": {
+      "image": "photos/themes/dead leopard.jpg",
+      "description": "Illegal killing and trading of leopards in Sri Lanka pose a severe threat to the species. Poaching for skins, bones, and body parts, driven by traditional medicine practices, contributes to a decline in leopard populations. Retaliatory killings due to human-wildlife conflicts further intensify the challenges faced by leopards. The consequences include disruptions in ecosystems, population decline, and risks to human safety.",
+      "mechanisms": "Efforts to combat illegal wildlife trade in Sri Lanka involve a multi-faceted approach. Strict law enforcement is implemented to deter poachers and traffickers, and penalties for engaging in such activities are severe. Conservation organizations work closely with local communities to raise awareness about the importance of leopard conservation and the consequences of wildlife trafficking. Additionally, international collaboration and cooperation contribute to the global fight against illegal wildlife trade.",
+      "source": "https://wildlifejustice.org/wildlife-crime/?gclid=CjwKCAiA-P-rBhBEEiwAQEXhHxWHwSmn33wo7zIsSK7KtxgiXXI32XpElZihcZQmraxsyluDZWXa4BoCKU4QAvD_BwE"
+    },
+    "threat2": {
+      "image": "photos/lepord graph.jpg",
+      "description": "Habitat loss and fragmentation present significant threats to Sri Lankan leopards. Rapid deforestation for agriculture, urbanization, and infrastructure development diminishes the available habitats, forcing leopards into smaller and isolated pockets of land. The consequences include disrupted natural movements, reduced prey availability, and increased human-leopard conflicts.",
+      "mechanisms": "To address these challenges, conservation efforts focus on habitat conservation and sustainable land-use practices. Engaging local communities in conservation initiatives helps create wildlife-friendly landscapes, ensuring the connectivity of habitats. Additionally, the implementation of wildlife corridors and protected areas aids in mitigating the impact of habitat loss and fragmentation. Ongoing monitoring and research contribute to adaptive strategies, striving to secure a sustainable future for leopards in the face of habitat challenges.",
+      "source": "https://www.inss.lk/index.php?id=534#:~:text=Urbanisation%20and%20the%20implementation%20of,the%20disturbance%20of%20wildlife%20corridors.&text=The%20loss%20of%20rainforest%20habitat,fauna%20of%20the%20island%20nation."
+    }
+  }
+  

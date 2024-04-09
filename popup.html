@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>editor</title>
+<link rel="stylesheet" type="text/css" href="popup.css">
+<script src="popup.js" defer></script>
+</head>
+<body>
+
+    <div class="popup-container" id="popupContainer" x-data="{ editableContent: '' }">
+        <div class="popup-content">
+            <div class="popup-header">
+                <h3>Edit Content</h3>
+                <button class="close-btn" onclick="closePopup()">&times;</button>
+            </div>
+            <div class="popup-body">
+                <div class="container">
+                    <h2>Select Page:</h2>
+                    <select id="dropdown" class="selection" @change="loadContent($event.target.value)">
+                        <option value="index.html">Home</option>
+                        <option value="intro">Introduction</option>
+                        <option value="department">Department</option>
+                        <option value="leopard">Leopard</option>
+                        <option value="animal">Animal</option>
+                        <option value="yala">Yala</option>
+                        <option value="wilpattu">Wilapattu</option>
+                    </select><br>
+                    <button id="select">SELECT PAGE</button>
+                    <button id="save">SAVE CHANGES</button>
+                    <br><br><br>
+                    <textarea id="editor-text" class="textarea" rows="4" placeholder="Enter text here..." x-model="editableContent"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

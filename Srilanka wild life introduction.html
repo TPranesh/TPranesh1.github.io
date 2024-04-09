@@ -1,149 +1,157 @@
-<!DOCTYPE htmml>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>SL: The Pinnacle of Wildlife</title>
-        <link rel="stylesheet" href="Srilanka wild life introduction.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            
-            <nav>
-                
-                  <a href="index.html">HOME PAGE</a>
-                  <a href="Srilanka wild life introduction.html">INTRODUCTION PAGE</a>
-                  <a href="Department of wildlife conservation.html">Department of wildlife conservation</a>
-                  <a href="Srilanka lepord.html">Srilankan lepord</a>
-                  <a href="Animals in srilanka.html">Animals in srilanka</a>
-                  <span></span>
-                
-            </nav>
-            
-        </header>
-        <h1 class="heading1"><center>Gal Oye National Park</center></h1>
-<br><br>
-<div class="div1"> 
-    <img src="photos/gal oye siloute.jpg" alt="gal oye national park srilanka " class="img1">
-    <p class="para1">
-        Gal Oya National Park, nestled in eastern Sri Lanka, is a haven of pristine wilderness and aquatic allure. The expansive Senanayake Samudraya reservoir sets the stage for boat safaris, revealing the mesmerizing world of Asian elephants, elusive sloth bears, and formidable crocodile species. The park's avian diversity adds to the allure, with waterbirds and raptors gracing the skies. Beyond its wildlife charm, Gal Oya seamlessly transitions from grassy plains to dense forests, offering diverse habitats for countless species. Boat safaris provide an intimate connection with the park's biodiversity, presenting an alternative perspective on nature's grandeur. With its unique blend of terrestrial and aquatic wonders, Gal Oya National Park invites exploration and promises a glimpse into the captivating beauty of Sri Lanka's less-explored gem.
-    </p>
-</div>
+<head>
+    <meta charset="UTF-8">
+    <title x-text="store.data.title"></title>
+    <link rel="stylesheet" href="Srilanka wild life introduction.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+<body x-data="initStore()" x-init="initStore">
+    <header>
+        <nav>
+            <template x-for="link in store.data.navLinks">
+                <a :href="link.link" x-text="link.label"></a>
+                <span></span>
+            </template>
+        </nav>
+    
+    </header>
 
-<div class="div2">
-    <h2>Intresting facts</h2>
-    <table border="5">
-        <tr>
-            <td>NAME</td>
-            <td>PHOTO</td>
-            <td>FACTS</td>
-            <td>Conservation Status</td>
-        </tr>
+    <h1 class="heading1" x-text="store.data.heading1"></h1>
+    <br><br>
+    <div class="div1">
+        <img :src="store.data.galOye.imgSrc" alt="Gal Oye National Park" class="img1">
+        <p class="para1" x-text="store.data.galOye.description"></p>
+    </div>
 
-        <tr>
-            <td>Asian Elephant</td>
-            <td><img src="photos/elephant table.jpg" alt="elephant" class="tablepic1"></td>
-            <td><p>An intriguing fact about Asian elephants in Gal Oya National Park is their unique behavior of swimming between islands within the Senanayake Samudraya reservoir. </p></td>
-            <td>Endangered (EN)</td>
-        </tr>
+    <div class="div2">
+        <h2>Interesting facts</h2>
+        <table border="1">
+            <tr>
+                <th>NAME</th>
+                <th>PHOTO</th>
+                <th>FACTS</th>
+                <th>Conservation Status</th>
+            </tr>
+            <template x-for="animal in store.data.galOyeTable">
+                <tr>
+                    <td x-text="animal.name"></td>
+                    <td><img :src="animal.photo" :alt="animal.name" class="tablepic"></td>
+                    <td x-text="animal.fact"></td>
+                    <td x-text="animal.conservationStatus"></td>
+                </tr>
+            </template>
+        </table>
+    </div>
 
-        <tr>
-            <td>Water Buffalo</td>
-            <td><img src="photos/water buffalo.jpg" alt="water buffalo" class="tablepic2"></td>
-            <td><p>To regulate body temperature and protect against parasites, water buffaloes frequently engage in mud baths. In Gal Oya, observing these animals wallowing in the mud along the reservoir shores is a common and fascinating sight.</p></td>
-            <td>Domesticated (no wild populations)</td>
-        </tr>
+    <div class="div3">
+        <iframe :src="store.data.galOye.mapSrc" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
 
-        <tr>
-            <td>Leopard Panthera pardus</td>
-            <td><img src="photos/leppord_tree.jpg.jpg" alt="lepord" class="tablepic3"></td>
-            <td><p>In Gal Oya National Park, leopards showcase exceptional adaptability, navigating seamlessly through diverse landscapes, including grassy plains, dense forests, and around the Senanayake Samudraya reservoir. This versatility sets them apart, making each leopard encounter in Gal Oya a testament to their remarkable ability to thrive in various environments.</p></td>
-            <td>Near Threatened (NT)</td>
-        </tr>
-    </table>
-</div>
+    <h1 class="heading1" x-text="store.data.heading2"></h1>
+    <br><br>
+    <div class="div4">
+        <img :src="store.data.knuckles.imgSrc" alt="Knuckles Mountain Range" class="img2">
+        <p class="para1" x-text="store.data.knuckles.description"></p>
+    </div>
 
-<div class="div3">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7916.216867052799!2d81.4685002!3d7.2284715!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae4e2a00da92731%3A0x2792347a67187b94!2sGal%20Oya%20Valley%20National%20Park!5e0!3m2!1sen!2slk!4v1705243529663!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
+    <div class="div5">
+        <h2>Interesting facts</h2>
+        <table border="1">
+            <tr>
+                <th>NAME</th>
+                <th>PHOTO</th>
+                <th>FACTS</th>
+                <th>Conservation Status</th>
+            </tr>
+            <template x-for="animal in store.data.knucklesTable">
+                <tr>
+                    <td x-text="animal.name"></td>
+                    <td><img :src="animal.photo" :alt="animal.name" class="tablepic"></td>
+                    <td x-text="animal.fact"></td>
+                    <td x-text="animal.conservationStatus"></td>
+                </tr>
+            </template>
+        </table>
+    </div>
 
-<h1 class="heading1"><center>Knuckles Mountain Range</center></h1>
-<br><br>
-<div class="div4"> 
-    <img src="photos/knuckles.jpg" alt="knucles mountain range " class="img2">
-    <p class="para1">
-        The Knuckles Mountain Range, a UNESCO World Heritage Site in central Sri Lanka, is a biodiversity hotspot boasting a rich tapestry of wildlife. This mountainous haven is home to diverse species, including the endemic purple-faced langur, Sambar deer, and wild boars. Trekking through the mist-covered peaks reveals a symphony of birdlife, with the Sri Lanka white-eye and spurfowl among the avian residents. The range's lush forests harbor a variety of reptiles and amphibians, contributing to the region's ecological significance. The Knuckles Mountain Range, with its scenic landscapes and abundant wildlife, offers a captivating adventure for nature enthusiasts seeking to explore the unique ecosystems of Sri Lanka.
-    </p>
-</div>
+    <div class="div6">
+        <iframe :src="store.data.knuckles.mapSrc" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
 
-<div class="div5">
-    <h2>Intresting facts</h2>
-    <table border="6">
-        <tr>
-            <td>NAME</td>
-            <td>PHOTO</td>
-            <td>FACTS</td>
-            <td>Conservation Status</td>
-        </tr>
-
-        <tr>
-            <td>Samba deer</td>
-            <td><img src="photos/samba deer.jpg" alt="samba deer" class="tablepic5"></td>
-            <td><p>In the Knuckles Mountain Range, Sambar Deer display remarkable adaptability, thriving across various elevations from lush forests to higher grassy plains. This versatility underscores their ability to navigate the diverse landscapes of this UNESCO World Heritage Site. </p></td>
-            <td>Least Concern (LC)</td>
-        </tr>
-
-        <tr>
-            <td>Wild Boar</td>
-            <td><img src="photos/wild boar.jpg" alt="wild boar" class="tablepic2"></td>
-            <td><p>In the Knuckles Mountain Range, Wild Boars act as ecosystem engineers, shaping the forest by their foraging behavior. Their presence contributes to the dynamic nature of the ecosystem, influencing plant diversity and growth. </p></td>
-            <td>Least Concern (LC)</td>
-        </tr>
-
-        <tr>
-            <td>Leopard Panthera pardus</td>
-            <td><img src="photos/purple face.jpg" alt="purple face" class="tablepic3"></td>
-            <td><p>The Purple-faced Langur in the Knuckles Mountain Range undergoes a fascinating color change from orange in infancy to deep purple as it matures. This adaptation serves as effective camouflage amidst the dense montane forests, aiding in their survival.</p></td>
-            <td>Near Threatened (NT)</td>
-        </tr>
-    </table>
-</div>
-
-<div class="div6">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7916.216867052799!2d81.4685002!3d7.2284715!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae4e2a00da92731%3A0x2792347a67187b94!2sGal%20Oya%20Valley%20National%20Park!5e0!3m2!1sen!2slk!4v1705243529663!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>       
-
-    </body>
-    <hr>
-    <footer id="footer">
+    <footer>
         <hr>
-        Author:Pranesh<br>
-        &copy;Copyright reserved<br>
-        <div>
-        <h4>LINKS</h4> 
-        <ul>
-            <li>
-              <a href="index.html">home</a>
-            </li>
-            <li>
-              <a href="Srilanka wild life introduction.html">INTRODUCTION</a>
-            </li>
-            <li>
-              <a href="Department of wildlife conservation.html">D.O.W.C</a>
-            </li>
-            <li>
-              <a href="Srilanka lepord.html">LEOPARD</a>
-            </li>
-            <li>
-              <a href="Animals in srilanka.html">Animals</a>
-            </li>
-            <li>
-              <a href="Yala.html">YALA</a>
-            </li>
-            <li>
-              <a href="Willpatu.html">WILLPATTU</a>
-            </li>
-        </ul>
+        <!-- Newsletter Subscription Form -->
+        <div class="newsletter">
+            <h3>Subscribe to Our Newsletter</h3>
+            <form x-on:submit.prevent="subscribe" id="newsletterForm">
+                <input type="email" x-model="email" id="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
         </div>
+        
+        <p x-text="store.data.footer.author"></p>
+        <p x-text="store.data.footer.copyright"></p>
+        <div>
+            <h4>LINKS</h4>
+            <ul>
+                <template x-for="link in store.data.footer.links">
+                    <li><a :href="link.link" x-text="link.label"></a></li>
+                </template>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        function initStore() {
+            return {
+                store: {
+                    data: {
+                        title: '',
+                        navLinks: [],
+                        heading1: '',
+                        galOye: {
+                            imgSrc: '',
+                            description: '',
+                            mapSrc: ''
+                        },
+                        galOyeTable: [],
+                        heading2: '',
+                        knuckles: {
+                            imgSrc: '',
+                            description: '',
+                            mapSrc: ''
+                        },
+                        knucklesTable: [],
+                        footer: {
+                            author: '',
+                            copyright: '',
+                            links: []
+                        }
+                    },
+                    init() {
+                        fetch('Srilanka wild life introduction.json')
+                            .then(response => response.json())
+                            .then(data => {
+                                this.data = data;
+                                });
+                    }
+                },
+                email: '',
+                subscribe() {
+                    let subscribedEmails = JSON.parse(localStorage.getItem('subscribedEmails')) || [];
+                    subscribedEmails.push(this.email);
+                    localStorage.setItem('subscribedEmails', JSON.stringify(subscribedEmails));
+                    this.email = ''; // Clear input after submission
+                    alert('Successfully subscribed!');
+                },
+                initStore() {
+                    this.store.init();
+                }
+            }
+        }
+    </script>
+    
+</body>
 </html>
